@@ -1,0 +1,25 @@
+{
+  "name": "minimum-rag-ts",
+  "version": "1.0.0",
+  "description": "RAGの基本構成を理解するための最小のRAG",
+  "main": "index.js",
+  "scripts": {
+    "ingest": "tsx src/ingest.ts",
+    "search": "tsx src/search.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:sasacheese/minimum-rag-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "openapi": "^1.0.0"
+  }
+}
