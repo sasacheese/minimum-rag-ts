@@ -58,6 +58,10 @@ async function main() {
         console.log(c.text.slice(0, 200) + "...")
         console.log()
     })
+
+    const top5Lines = top5.map(e => JSON.stringify(e)).join("\n")
+    fs.writeFileSync("./output/top5.jsonl", top5Lines)
+    fs.writeFileSync("./output/query.txt", query)
 }
 
 main().catch(console.error)

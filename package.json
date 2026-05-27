@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "ingest": "tsx src/ingest.ts",
-    "search": "tsx src/search.ts"
+    "search": "tsx src/search.ts",
+    "rag": "tsx src/rag.ts"
   },
   "repository": {
     "type": "git",
