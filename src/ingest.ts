@@ -1,9 +1,7 @@
 import "dotenv/config"
 import * as fs from "fs"
 import { chunk } from "./chunker"
-import OpenAI from "openai"
-
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+import { openai } from "./openai"
 
 async function embedChunk(text: string): Promise<number[]> {
     const res = await openai.embeddings.create({
